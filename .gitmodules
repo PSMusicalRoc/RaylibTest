@@ -4,3 +4,6 @@
 [submodule "include/vendor/raygui"]
 	path = include/vendor/raygui
 	url = https://github.com/raysan5/raygui
+[submodule "include/vendor/imgui"]
+	path = include/vendor/imgui
+	url = https://github.com/ocornut/imgui.git
