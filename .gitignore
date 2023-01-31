@@ -4,3 +4,4 @@ obj/
 libs/
 *.make
 Makefile
+imgui.ini

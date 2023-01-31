@@ -1,25 +1,21 @@
 #include "Scenes/DeveloperSplash.h"
 #include <raylib.h>
 
-#include "Scenes/TitleScene.h"
+#include "Scenes/ConsoleScene.h"
 
 void DevelSplashScene::SceneMain()
 {
     totalTimeElapsed += GetFrameTime();
 
-    BeginDrawing();
+    ClearBackground(BLACK);
 
-        ClearBackground(BLACK);
+    int width = MeasureText("Roc Games", 100);
+    int posx = (GetScreenWidth() - width) / 2;
 
-        int width = MeasureText("Roc Games", 100);
-        int posx = (GetScreenWidth() - width) / 2;
-
-        DrawText("Roc Games", posx, 50, 100, BLUE);
-
-    EndDrawing();
+    DrawText("Roc Games", posx, 50, 100, BLUE);
 
     if (totalTimeElapsed >= 2.0f)
     {
-        ChangeCurrentScene<TitleScene>();
+        ChangeCurrentScene<ConsoleScene>();
     }
 }

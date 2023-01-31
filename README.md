@@ -2,8 +2,8 @@
 
 ### Windows
 - MSYS2 and either MINGW64 or UCRT64
-  - MINGW64 packages: `mingw-w64-x86_64-toolchain mingw-w64-x86_64-premake`
-  - UCRT64 packages: `mingw-w64-ucrt-x86_64-toolchain mingw-w64-ucrt-x86_64-premake`
+  - MINGW64 packages: `mingw-w64-x86_64-toolchain mingw-w64-x86_64-premake mingw-w64-x86_64-glfw`
+  - UCRT64 packages: `mingw-w64-ucrt-x86_64-toolchain mingw-w64-ucrt-x86_64-premake mingw-w64-ucrt-x86_64-glfw`
 
 ### Linux
 - Debian/Ubuntu

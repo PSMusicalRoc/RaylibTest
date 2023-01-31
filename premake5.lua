@@ -13,12 +13,27 @@ project "RayGame"
 
     files {
         "src/**.cpp",
-        "include/**.h"
+        "include/**.h",
+        "include/vendor/imgui/*.cpp",
+        "include/vendor/imgui/misc/cpp/imgui_stdlib*"
+    }
+
+    removefiles {
+        "include/vendor/imgui/backends/*"
+    }
+
+    files {
+        "include/vendor/imgui/backends/imgui_impl_opengl3*",
+        "include/vendor/imgui/backends/imgui_impl_glfw*",
     }
 
     includedirs {
         "include/roc",
-        "include/vendor/raylib/src"
+        "include/vendor/raylib/src",
+        "include/vendor/raygui/src",
+        "include/vendor/imgui",
+        "include/vendor/imgui/backends",
+        "include/vendor/imgui/misc/cpp/"
     }
 
     libdirs {
@@ -30,6 +45,8 @@ project "RayGame"
         "gdi32",
         "winmm"
     }
+
+    defines { "RAYGUI_IMPLEMENTATION" }
 
 
     filter "configurations:Debug"

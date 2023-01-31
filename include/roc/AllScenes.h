@@ -4,6 +4,7 @@
 
 #include "Scenes/DeveloperSplash.h"
 #include "Scenes/TitleScene.h"
+#include "Scenes/ConsoleScene.h"
 
 
 #endif
