@@ -14,6 +14,7 @@ project "RayGame"
     files {
         "src/**.cpp",
         "include/**.h",
+        "include/RocErrorManagement/**.cpp",
         "include/vendor/imgui/*.cpp",
         "include/vendor/imgui/misc/cpp/imgui_stdlib*"
     }
@@ -28,6 +29,7 @@ project "RayGame"
     }
 
     includedirs {
+        "include",
         "include/roc",
         "include/vendor/raylib/src",
         "include/vendor/raygui/src",

@@ -17,6 +17,9 @@ int main()
     const int screenWidth = 1000;
     const int screenHeight = 800;
     
+
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     InitWindow(screenWidth, screenHeight, "RaylibTest!");
     InitAudioDevice();
 
@@ -41,6 +44,7 @@ int main()
     while (!WindowShouldClose())
     {
         BeginDrawing();
+        
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
