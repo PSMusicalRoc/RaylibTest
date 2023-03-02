@@ -20,7 +20,8 @@ public:
 
 	static void DeleteCoordinator()
 	{
-		delete mCoordinatorPtr;
+		if (mCoordinatorPtr != nullptr)
+			delete mCoordinatorPtr;
 		mCoordinatorPtr = nullptr;
 	}
 
